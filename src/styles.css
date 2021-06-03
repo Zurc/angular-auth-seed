@@ -46,13 +46,17 @@ code {
   right: 0;
 }
 
+.spinner img {
+  max-width: 200px;
+}
+
 .result-block-container .result-block {
   opacity: 1;
 }
 
 .loading {
   display: flex;
-  min-height: 500px;
+  max-width: 50px;
   align-items: center;
   justify-content: center;
 }
