@@ -9,7 +9,7 @@ import { AuthGuard } from '@auth0/auth0-angular';
 
 const routes: Routes = [
   {
-    path: '/angular-auth-seed',
+    path: '/',
     component: HomeComponent,
     pathMatch: 'full',
   },
