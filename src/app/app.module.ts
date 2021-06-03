@@ -11,7 +11,6 @@ import { NavBarComponent } from './components/nav-bar/nav-bar.component';
 import { HomeContentComponent } from './components/home-content/home-content.component';
 import { HomeComponent } from './pages/home/home.component';
 import { ProfileComponent } from './pages/profile/profile.component';
-import { ExternalApiComponent } from './pages/external-api/external-api.component';
 
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { HttpClientModule } from '@angular/common/http';
@@ -38,7 +37,6 @@ import { AuthHttpInterceptor } from '@auth0/auth0-angular';
     NavBarComponent,
     HomeComponent,
     ProfileComponent,
-    ExternalApiComponent,
     LoginButtonComponent,
     SignupButtonComponent,
     LogoutButtonComponent,
@@ -53,9 +51,6 @@ import { AuthHttpInterceptor } from '@auth0/auth0-angular';
     // 👇 update AuthModule
     AuthModule.forRoot({
       ...env.auth,
-      httpInterceptor: {
-        allowedList: [`${env.dev.serverUrl}/api/messages/protected-message`],
-      },
     }),
   ],
   providers: [

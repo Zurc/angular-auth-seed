@@ -1,6 +1,4 @@
 {
   "domain": "dev-c0cgblu9.eu.auth0.com",
-  "clientId": "c4YH1pgnaJ04dmmLiC95A9M5AioI72QY",
-  "audience": "https://express.sample",
-  "serverUrl": "http://localhost:6060"
+  "clientId": "c4YH1pgnaJ04dmmLiC95A9M5AioI72QY"
 }
