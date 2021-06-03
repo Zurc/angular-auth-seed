@@ -14,11 +14,6 @@ export class LoginButtonComponent implements OnInit {
   ngOnInit(): void {}
 
   loginWithRedirect(): void {
-    this.auth.loginWithRedirect({
-      appState: {
-        randomString: '/angular-auth-seed',
-        target: window.location.pathname,
-      },
-    });
+    this.auth.loginWithRedirect();
   }
 }
