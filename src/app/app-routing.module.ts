@@ -20,7 +20,6 @@ const routes: Routes = [
   {
     path: '',
     redirectTo: 'home-component',
-    component: HomeComponent,
     pathMatch: 'full',
   },
   { path: '**', component: HomeComponent },
